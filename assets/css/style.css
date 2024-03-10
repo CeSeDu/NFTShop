@@ -79,17 +79,22 @@ header{
     align-items: center;
 }
 .header-container{
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
+    gap: 70px;
 }
 .header-column-1{
     display: grid;
     justify-content: center;
     align-items: center;
-    gap: 5%;
+    gap: 10%;
+    max-width: 35%;
+}
+.header-culumn-2{
+    width: 55%;
 }
 .header-main-title{
   color: #271362;
@@ -122,13 +127,20 @@ header{
     gap: 20px;
     padding: 3%;
 }
+.header-cards{
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    gap: 50px;
+}
 .header-cards-container-title{
     color: #271362;
 }
 .card{
     display: grid;
-    background-color: #5356fb4f;
-    width: 25%;
+    background-color: #f8f8f8;
+    border-radius: 20px;
+    padding: 30px;
+    gap: 10px;
 }
 .card-user-container{
     display: flex;
@@ -137,11 +149,25 @@ header{
     height: 25px;
     gap: 10px;
 }
+.card-item-name,.card-item-price{
+    color: #271362;
+    font-size: 26px;
+}
+.card-item-price{
+    font-size: 18px;
+    font-weight: 900;
+}
 .card-img{
     border-radius: 50%;
-    max-width: ;
+    max-width:100% ;
 }
 .card-user-img{
     max-width: 25px;
     border-radius: 50%;
+}
+.card-user-name{
+    color: #616161;
+}
+.fa-star{
+    color: rgb(190, 145, 9);
 }
