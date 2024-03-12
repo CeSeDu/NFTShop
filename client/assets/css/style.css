@@ -177,7 +177,7 @@ header {
 .header-title-span {
   color: #5356fb;
 }
-.header-subtitle {
+.header-subtitle ,.footer-subtitle {
   max-width: 400px;
   color: #616161;
 }
@@ -210,7 +210,7 @@ header {
   border-radius: 50%;
   box-shadow: -10px -10px 160px 100px #271362;
 }
-.cards{
+.cards {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -219,7 +219,7 @@ header {
 .cards-container-title {
   color: #271362;
 }
-.card  {
+.card {
   display: grid;
   background-color: #5356fb0e;
   border-radius: 20px;
@@ -229,7 +229,8 @@ header {
   overflow: hidden;
   min-width: 200px;
 }
-.card:hover, .trend-card:hover {
+.card:hover,
+.trend-card:hover {
   background-color: white;
   box-shadow: 0px 1px 10px #737171;
 }
@@ -264,7 +265,8 @@ header {
   transition: transform 0.5s ease;
   overflow: hidden;
 }
-.card:hover .card-img  ,.trend-card:hover .trend-card-img{
+.card:hover .card-img,
+.trend-card:hover .trend-card-img {
   transform: scale(1.2);
 }
 .card-img-button-container {
@@ -294,12 +296,12 @@ header {
   color: rgb(190, 145, 9);
 }
 /*Article */
-.trend-section-container{
-    display: grid;
-    justify-content: center;
-    text-align: center;
-    padding: 30px;
-    gap: 40px;
+.trend-section-container {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  gap: 40px;
 }
 .trend-card {
   align-items: center;
@@ -315,10 +317,10 @@ header {
   transition: transform 1s ease;
 }
 .trend-card-img-container {
-    max-width: 100%;
-    overflow: hidden;
-    border-radius: 20px;
-  }
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+}
 .trend-card-footer {
   background-color: #f6f6f6;
   width: 100%;
@@ -326,73 +328,175 @@ header {
   margin-top: -20px;
   position: relative;
   text-align: start;
+}
+.trending-card-detail {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 50px 0px 0px;
+}
+.trend-card-user-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.card-footer-content {
+  padding: 10%;
   display: grid;
-  gap: 20px;
-}
-.trending-card-detail{
-    display: flex ;
-    justify-content: space-between;
-    padding: 0px  50px 0px 0px;
-}
-.trend-card-user-container{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-@media (max-width: 900px) {
-    .trend-card  {
-        max-width: max-content;
-  }
+  gap: 10px;
 }
 
 /*User Container*/
-.container,.card-square{
+.container,
+.card-square {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  padding: 5%;
+}
+.square-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.user-container {
+  display: flex;
+  margin: auto;
+}
+.user-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 0px 50px 0px 0px;
+  gap: 100px;
+}
+.user-card-img {
+  border-radius: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+.card-square {
+  background-color: #27136232;
+  padding: 10%;
+  border-radius: 20px;
+}
+
+.nft-card {
+  display: flex;
+  gap: 30px;
+  text-align: start;
+  max-width: 400px;
+  align-items: start;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10%;
+}
+.nft-card-text-content{
+
+}
+.nft-card:hover {
+  background-color: #271362;
+  color: white;
+}
+.wallet-icon {
+  font-size: 65px;
+}
+.card-content {
+  display: grid;
+  gap: 10px;
+}
+/*Footer*/
+.footer {
+  background-color: white;
+  background-image: url("https://radiustheme.com/demo/wordpress/themes/niftric/wp-content/themes/niftric/assets/img/footer-shape.png");
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+.footer-row {
+  position: relative;
+  z-index: 1;
+  padding: 5%;
+  display: grid;
+  justify-content: space-around;
+  gap: 5%;
+  grid-template-columns: repeat(4, 1fr);
+}
+.footer-column{
+  display: grid;
+  gap: 20px;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-around;
+  padding: 2%;
+}
+.footer-bottom-list {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+}
+.footer-list{
+  list-style: none;
+ display: grid;
+  gap: 10px;
+}
+.footer-title{
+  color: #271362;
+}
+.footer-subtitle,.footer-list li{
+  font-size: 18px;
+  color: #616161;
+}
+
+
+@media (max-width: 900px) {
+  .trend-card {
+    max-width: max-content;
+  }
+  nav {
+    padding: 10px;
+    margin-bottom: 100px;
+  }
+  .thema-button-group{
+    display: none;
+  }
+  .header-culumn-2,
+  .header-column-1 {
+    width: 100%;
+    margin: 100px 0px;
+  }
+  .nav-item-group,
+  .search-container {
+    display: none;
+  }
+  .wallet-button {
+    display: none;
+  }
+  .footer-row {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 100px;
+  }
+  .footer-column{
+    justify-content: center;
+  }
+  .footer-bottom {
     display: grid;
     justify-content: center;
     text-align: center;
-    gap: 20px;
-    padding: 5%;
-}
-.square-cards{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-.user-container{
-    display: flex;
-    margin: auto;
-}
-.user-card{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius:100px;
-    background-color: white;
-    box-sizing: border-box;
-    padding:0px 50px 0px 0px;
-}
-.user-card-img{
-    border-radius: 100%;
-    width:100%;
-    padding: 0px;
-    margin: 0px;
-}
-.card-square{
-    background-color: #27136232;
-    padding: 10%;
-    border-radius:20px;
-}
-
-.nft-card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 400px;
-    background-color: #5356fb52;
-    border-radius: 20px;
-    padding: 3%;
-}
-.wallet-icon{
-    font-size: 80px;
+    gap: 100px;
+    margin-top: 100px;    
+    }    
+  .footer-bottom-list{
+    display: grid;
+  }
 }
