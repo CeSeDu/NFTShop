@@ -161,6 +161,7 @@ header {
 }
 .header-culumn-2 {
   margin-top: 10%;
+  width: 50%;
 }
 .header-img {
   margin: auto;
@@ -209,15 +210,16 @@ header {
   border-radius: 50%;
   box-shadow: -10px -10px 160px 100px #271362;
 }
-.cards {
+.cards{
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 50px;
 }
 .cards-container-title {
   color: #271362;
 }
-.card {
+.card  {
   display: grid;
   background-color: #5356fb0e;
   border-radius: 20px;
@@ -324,7 +326,6 @@ header {
   margin-top: -20px;
   position: relative;
   text-align: start;
-  padding: 5%;
   display: grid;
   gap: 20px;
 }
@@ -342,4 +343,56 @@ header {
     .trend-card  {
         max-width: max-content;
   }
+}
+
+/*User Container*/
+.container,.card-square{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    padding: 5%;
+}
+.square-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.user-container{
+    display: flex;
+    margin: auto;
+}
+.user-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:100px;
+    background-color: white;
+    box-sizing: border-box;
+    padding:0px 50px 0px 0px;
+}
+.user-card-img{
+    border-radius: 100%;
+    width:100%;
+    padding: 0px;
+    margin: 0px;
+}
+.card-square{
+    background-color: #27136232;
+    padding: 10%;
+    border-radius:20px;
+}
+
+.nft-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    background-color: #5356fb52;
+    border-radius: 20px;
+    padding: 3%;
+}
+.wallet-icon{
+    font-size: 80px;
 }
