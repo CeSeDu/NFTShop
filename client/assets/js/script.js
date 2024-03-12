@@ -16,3 +16,12 @@ let changeThema = function (){
     });
 }
 changeThema();
+
+var xhr = new XMLHttpRequest();
+xhr.open('GET', 'http://localhost:8080/main-section', true);
+xhr.setRequestHeader('Access-Control-Allow-Origin', '*'); // CORS header eklemek
+xhr.onload = function () {
+  consoleç.log("istek tamamlandı")
+};
+xhr.send();
+
