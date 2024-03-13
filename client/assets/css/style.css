@@ -467,6 +467,11 @@ header {
   font-size: 18px;
   color: #616161;
 }
+.footer-list li:hover{
+color:#271362;
+text-decoration: underline;
+}
+
 
 @media (max-width: 900px) {
   .trend-card {

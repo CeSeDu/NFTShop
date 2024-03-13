@@ -38,7 +38,8 @@ xhr.open('GET', 'http://localhost:8080/main-section', true);
 
 xhr.onload = function () {
   if (xhr.status >= 200 && xhr.status < 300) {
-    console.log(xhr.responseText); // Gelen veriyi konsola yazdır
+    const info = JSON.parse(this.responseText)
+    console.log(info.title);
   } else {
     console.error('İstek hatası:', xhr.statusText);
   }
@@ -47,17 +48,6 @@ xhr.onload = function () {
 xhr.onerror = function () {
   console.error('İstek hatası:', xhr.statusText);
 };
-
 xhr.send();
 
-// var xhttp = new XMLHttpRequest();
-// xhttp.onreadystatechange = function () {
-//   if (this.readyState == 4 && this.status == 200) {
-//     // Typical action to be performed when the document is ready:
-//     const info = JSON.parse(this.responseText)
-//     console.log(info.title);
 
-//   }
-// };
-// xhttp.open("GET", "http://localhost:8080/main-section", true);
-// xhttp.send();
