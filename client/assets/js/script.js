@@ -141,7 +141,7 @@ fetch('http://localhost:8080/seller-users')
   const userCardContainer = document.querySelector(".user-container");
   data.cards.forEach(cards =>{
     const userCardHMTL = `
-    <div class="user-card ">
+    <div class="user-card progress-bar ">
     <div class="user-card-img-container">
     <img
       class="user-card-img"
