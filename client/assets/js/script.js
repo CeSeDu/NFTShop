@@ -1,20 +1,19 @@
 let changeTheamaLight = document.querySelector(".active-thema");
 let changeTheamaDark = document.querySelector(".passive-thema");
 
-let changeThema = function (){
-    changeTheamaLight.addEventListener("click" , ()=> {
+let changeThema = function () {
+  changeTheamaLight.addEventListener("click", () => {
+    changeTheamaLight.classList.add("active-thema");
+    changeTheamaLight.classList.remove("passive-thema");
+    changeTheamaDark.classList.add("passive-thema");
+  });
 
-        changeTheamaLight.classList.add("active-thema");
-        changeTheamaLight.classList.remove("passive-thema");
-        changeTheamaDark.classList.add("passive-thema");
-    });
-
-    changeTheamaDark.addEventListener("click" , ()=> {
-        changeTheamaDark.classList.add("active-thema");
-        changeTheamaDark.classList.remove("passive-thema");
-        changeTheamaLight.classList.add("passive-thema");
-    });
-}
+  changeTheamaDark.addEventListener("click", () => {
+    changeTheamaDark.classList.add("active-thema");
+    changeTheamaDark.classList.remove("passive-thema");
+    changeTheamaLight.classList.add("passive-thema");
+  });
+};
 changeThema();
 
 // fetch('http://localhost:8080/main-section', {
@@ -51,3 +50,14 @@ xhr.onerror = function () {
 
 xhr.send();
 
+// var xhttp = new XMLHttpRequest();
+// xhttp.onreadystatechange = function () {
+//   if (this.readyState == 4 && this.status == 200) {
+//     // Typical action to be performed when the document is ready:
+//     const info = JSON.parse(this.responseText)
+//     console.log(info.title);
+
+//   }
+// };
+// xhttp.open("GET", "http://localhost:8080/main-section", true);
+// xhttp.send();
