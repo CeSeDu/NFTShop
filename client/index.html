@@ -28,6 +28,9 @@
         <i class="fa-solid fa-magnifying-glass"></i>
         <input type="search" placeholder="Search..." class="search-input" />
       </div>
+     <button class="dropdown">
+      
+     </button>
       <!--!Buraya dropdown button eklenecek-->
       <ul class="nav-item-group">
         <li class="nav-item-home">
@@ -120,10 +123,11 @@
           <i class="fa-solid fa-bars"></i>
         </button>
       </div>
-      <div>
-        <button class="button-purple wallet-button">Connect Wallet</button>
+      <div class="wallet-button">
+        <button class="button-purple ">Connect Wallet</button>
       </div>
     </nav>
+    
     <!--Header Start-->
     <header>
       <div class="header-container">
@@ -160,7 +164,7 @@
         </div>
         <!--!CARDS-->
         <div class="cards">
-          <div class="card">
+          <!-- <div class="card">
             <div class="card-img-container">
               <img
                 class="card-img"
@@ -193,21 +197,22 @@
               <i class="fa-solid fa-star"></i>
               <i class="fa-regular fa-star"></i>
             </div>
-          </div>
+          </div> -->
         </div>
+        
       </div>
     </header>
     <!--Main-->
     <main>
         <!--main/Article-->
-        <article class="trend-section-container">
-          <h1 class="cards-container-title">Trending Explore</h1>
-          <div class="trending-section-subtitle">
-            Lorem ipsum dolor amet the at on consectetur adipiscing.
+        <article class="cards-container" >
+          <h1 class="cards-container-title">Exclusive Drops</h1>
+          <div class="header-subtitle">
+            Lorem amet the at on consectetur adipiscing.
           </div>
-          <div class="cards-container">
-            <div class="cards">
-              <div class="trend-card">
+          <div class="cards" id="trend-card-container">
+          </div>
+              <!-- <div class="trend-card">
                 <div class="trend-card-img-container">
                   <img
                     class="trend-card-img"
@@ -246,43 +251,43 @@
                     </div>
                   </div>
                 </div>
+              </div> -->
+              <div class="">
+                <button class="button-purple">View All</button>
               </div>
-            </div>
-            <div class="">
-              <button class="button-purple">View All</button>
-            </div>
-          </div>
+
         </article>
         <!--main/article/article-->
-        <article class="container cards-container">
+        <article class="user-cards-container">
           <h1 class="cards-container-title">Trending Explore</h1>
           <div class="trending-section-subtitle">
             Lorem ipsum dolor amet the at on consectetur adipiscing.
           </div>
-          <div class="user-container cards">
-            <div class="user-card card">
-              <div class="user-card-img-container">
-                <img
-                  class="user-card-img"
-                  src="https://radiustheme.com/demo/wordpress/themes/niftric/wp-content/uploads/2022/07/cropped-vendor1-150x150.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="user-card-container">
-                <h2 class="user-text">William Samson</h2>
-                <div class="stars">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-regular fa-star"></i>
+          <div class="user-container">
+            <!-- <div class="user-card card">
+                <div class="user-card-img-container">
+                  <img
+                    class="user-card-img"
+                    src="https://radiustheme.com/demo/wordpress/themes/niftric/wp-content/uploads/2022/07/cropped-vendor1-150x150.jpg"
+                    alt=""
+                  />
                 </div>
-              </div>
-            </div>
+                <div class="user-card-content-container">
+                  <h2 class="user-text">William Samson</h2>
+                  <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                </div>
+            </div> -->
           </div>
         </article>
+         <!--main/article/article/article-->
         <article class="cards-container">
-          <h1>Trending Explore</h1>
+          <h1 class="cards-container-title">Trending Explore</h1>
           <div class="trending-section-subtitle">
             Lorem ipsum dolor amet the at on consectetur adipiscing.
           </div>
@@ -294,6 +299,10 @@
           </div>
         </article>
         <article class="container">
+          <h1 class="cards-container-title">Trending Explore</h1>
+          <div class="trending-section-subtitle">
+            Lorem ipsum dolor amet the at on consectetur adipiscing.
+          </div>
           <div class="nft-card">
             <i class="fa-solid fa-wallet wallet-icon"></i>
             <div class="card-content">
@@ -306,8 +315,8 @@
             </div>
           </div>
         </article>
-    
     </main>
+    <!--footer-->
     <footer>
       <div class="footer"></div>
       <div class="footer-row">
@@ -377,7 +386,7 @@
         </div>
         <span>
           <ul class="footer-bottom-list">
-            <li>All NFTs</li>
+            <li class="underline-animation">All NFTs</li>
             <li>Art</li>
             <li>Music</li>
             <li>Domain Names</li>
