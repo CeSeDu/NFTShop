@@ -15,7 +15,7 @@ nav {
   background-color: #f8f8f8;
   width: 100%;
   border-bottom: 1px solid #ebebeb34;
-  z-index: 2;ş.i
+  z-index: 2;
   top: 0;
 }
 .nav-button-group button:hover {
@@ -403,10 +403,7 @@ main {
   display: grid;
   justify-content: center;
   text-align: center;
-  gap: 20px;
-  padding: 5%;
 }
-
 .user-cards-container {
   padding: 10%;
 }
@@ -446,21 +443,36 @@ main {
 }
 .card-square {
   background-color: #27136232;
-  padding: 10%;
+  padding: 50px;
   border-radius: 20px;
+  min-width: 150px;
+  min-height: 100px;
+}
+.card-square i{
+font-size: 35px;
+background-color: #27136229;
+margin: auto;
+padding: 20px;
+border-radius: 99px 50px 94px 91px;
 }
 .user-card-content-container {
   margin-right: 30px;
 }
-.nft-card {
+.nft-card{
   display: flex;
   gap: 30px;
   text-align: start;
-  max-width: 400px;
   align-items: start;
   background-color: white;
   border-radius: 20px;
-  padding: 10%;
+  padding: 50px;
+}
+
+.nft-card-container {
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: auto auto;
+  gap: 30px;
 }
 .nft-card:hover {
   background-color: #271362;
@@ -479,7 +491,7 @@ main {
   background-image: url("https://radiustheme.com/demo/wordpress/themes/niftric/wp-content/themes/niftric/assets/img/footer-shape.png");
   position: absolute;
   width: 100%;
-  height: 50%;
+  height:37%;
   z-index: -1;
   background-size: cover;
   background-repeat: no-repeat;
@@ -488,7 +500,7 @@ main {
 .footer-row {
   position: relative;
   z-index: 1;
-  padding: 5%;
+  padding: 0% 20%;
   display: grid;
   justify-content: space-around;
   gap: 5%;
@@ -572,6 +584,10 @@ main {
   }
   .header-subtitle {
     max-width: max-content;
+  }
+  .nft-card-container{
+display: grid;
+grid-template-columns: auto;
   }
 }
 

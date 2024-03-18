@@ -166,3 +166,46 @@ userCardContainer.innerHTML += userCardHMTL;
 .catch(error => {
   console.error('Veri çekme sırasında bir hata oluştu:', error);
 });
+
+fetch('http://localhost:8080/browse-by-category')
+.then(response => response.json())
+.then(data => {
+  const artCardContainer = document.querySelector(".square-cards");
+  data.cards.forEach(cards =>{
+    const artCardHMTL = `   
+    <div class="card-square ">
+    <i class="fa-solid fa-camera"></i>
+    <h3>${cards}</h3>
+  </div>`;
+  artCardContainer.innerHTML += artCardHMTL;
+} );
+})
+.catch(error => {
+  console.error('Veri çekme sırasında bir hata oluştu:', error);
+});
+
+//!NFT Card
+
+fetch('http://localhost:8080/create-and-sell')
+.then(response => response.json())
+.then(data =>  {
+  const nftCardContainer = document.querySelector('.nft-card-container');
+  data.cards.forEach(cards => {
+    const nftCard = `  
+    <div class="nft-card">
+    <i class="fa-solid fa-wallet wallet-icon"></i>
+    <div class="card-content">
+      <h6>${cards.title}</h6>
+      <div class="nft-card-text-content">
+      ${cards.text}
+      </div>
+    </div>
+  </div>
+  `;
+    nftCardContainer.innerHTML += nftCard;
+  })
+  .catch(error => {
+    console.error('Veri çekme sırasında bir hata oluştu:', error);
+
+  });
+})
