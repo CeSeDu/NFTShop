@@ -9,6 +9,13 @@
   </head>
   <body>
     <!--Navbar-->
+    <div class="hidden-navbar display-flex">
+      <span>March 18, 2024</span>
+      <div class="hidden-wallet-button">
+        <button class="button-purple">Connect Wallet</button>
+      </div>
+    </div>
+
     <nav>
       <div class="main-logo">
         <img
@@ -28,7 +35,6 @@
         <i class="fa-solid fa-magnifying-glass"></i>
         <input type="search" placeholder="Search..." class="search-input" />
       </div>
-      <!--!Buraya dropdown button eklenecek-->
       <ul class="nav-item-group">
         <li class="nav-item-home">
           <a class="nav-item href=">Home</a>
@@ -116,7 +122,8 @@
         <button>
           <i class="fa-solid fa-cart-shopping"></i>
         </button>
-        <button>
+        <!--!dropdown button-->
+        <button class="dropdown-button">
           <i class="fa-solid fa-bars"></i>
         </button>
       </div>
@@ -161,40 +168,7 @@
         </div>
         <!--!CARDS-->
         <div class="cards">
-          <!-- <div class="card">
-            <div class="card-img-container">
-              <img
-                class="card-img"
-                src="https://radiustheme.com/demo/wordpress/themes/niftric/wp-content/uploads/2022/10/product1-500x500.jpg"
-                alt=""
-              />
-              <div class="card-img-button-container">
-                <button class="card-img-hidden-button">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                </button>
-                <button class="card-img-hidden-button">
-                  <i class="fa-regular fa-heart"></i>
-                </button>
-              </div>
-            </div>
-            <h3 class="card-item-name">The Digital Cube</h3>
-            <div class="card-item-price">$189.00</div>
-            <div class="card-user-container">
-              <img
-                class="card-user-img"
-                src="https://radiustheme.com/demo/wordpress/themes/niftric/wp-content/uploads/2022/08/cropped-vendor2-1-150x150.jpg"
-                alt=""
-              />
-              <span class="card-user-name">Jenny Wilson</span>
-            </div>
-            <div class="stars">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-regular fa-star"></i>
-            </div>
-          </div> -->
+       
         </div>
         
       </div>
@@ -208,47 +182,7 @@
             Lorem amet the at on consectetur adipiscing.
           </div>
           <div class="cards" id="trend-card-container">
-          </div>
-              <!-- <div class="trend-card">
-                <div class="trend-card-img-container">
-                  <img
-                    class="trend-card-img"
-                    src="https://radiustheme.com/demo/wordpress/themes/niftric/wp-content/uploads/2022/10/product1-500x500.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="trend-card-footer">
-                  <div class="card-footer-content">
-                    <h3 class="card-item-name">The Digital Cube</h3>
-                    <div class="trend-card-user-container">
-                      <img
-                        class="card-user-img"
-                        src="https://radiustheme.com/demo/wordpress/themes/niftric/wp-content/uploads/2022/08/cropped-vendor2-1-150x150.jpg"
-                        alt=""
-                      />
-                      <span class="card-user-name">Jenny Wilson</span>
-                    </div>
-                    <div class="trending-card-detail">
-                      <div class="card-item-price">$189.00</div>
-                      <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                      </div>
-                    </div>
-                    <div class="trend-card-img-button-container">
-                      <button class="trend-card-img-hidden-button">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                      </button>
-                      <button class="trend-card-img-hidden-button">
-                        <i class="fa-regular fa-heart"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div> -->
+          </div>            
               <div class="">
                 <button class="button-purple">View All</button>
               </div>
@@ -261,41 +195,17 @@
             Lorem ipsum dolor amet the at on consectetur adipiscing.
           </div>
           <div class="user-container">
-            <!-- <div class="user-card card">
-                <div class="user-card-img-container">
-                  <img
-                    class="user-card-img"
-                    src="https://radiustheme.com/demo/wordpress/themes/niftric/wp-content/uploads/2022/07/cropped-vendor1-150x150.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="user-card-content-container">
-                  <h2 class="user-text">William Samson</h2>
-                  <div class="stars">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                  </div>
-                </div>
-            </div> -->
           </div>
         </article>
          <!--main/article/article/article-->
-        <article class="cards-container">
-          <h1 class="cards-container-title">Trending Explore</h1>
+        <article class="cards-container square-cards-container">
+          <h1 class="cards-container-title ">Trending Explore</h1>
           <div class="trending-section-subtitle">
             Lorem ipsum dolor amet the at on consectetur adipiscing.
           </div>
-          <div class="square-cards cards">
-            <!-- <div class="card-square card">
-              <i class="fa-solid fa-camera"></i>
-              <h1>Art Work</h1>
-            </div> -->
-          </div>
+          <div class="square-cards"></div>
         </article>
-        <article class="cards-container">
+        <article class="cards-container bg-none">
           <h1 class="cards-container-title ">Trending Explore</h1>
           <div class="trending-section-subtitle">
             Lorem ipsum dolor amet the at on consectetur adipiscing.
@@ -307,7 +217,7 @@
     </main>
     <!--footer-->
     <footer>
-      <div class="footer "></div>
+      <div class="footer"></div>
       <div class="footer-row">
         <div class="footer-column">
           <h2 class="footer-title">Informed By Newsletter</h2>
@@ -315,19 +225,31 @@
             *Subscribe to our newsletter to receive early discount offers and
             updates.
           </div>
-          <div class="search-container">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="search" placeholder="Search..." class="search-input" />
+          <div class="search-container2">
+            <input type="search" placeholder="Your Email Adress" class="search-input" />
+            <div class="search-container2-plane-button">
+              <i class="fa-regular fa-paper-plane"></i>
+            </div>
+           
           </div>
           <div class="nav-button-group">
             <button>
-              <i class="fa-solid fa-user"></i>
+              <i class="fa-brands fa-facebook-f"></i>
             </button>
             <button>
-              <i class="fa-solid fa-cart-shopping"></i>
+              <i class="fa-brands fa-facebook-f"></i>
             </button>
             <button>
-              <i class="fa-solid fa-bars"></i>
+              <i class="fa-brands fa-facebook-f"></i>
+            </button>
+            <button>
+              <i class="fa-brands fa-facebook-f"></i>
+            </button>
+            <button>
+              <i class="fa-brands fa-facebook-f"></i>
+            </button>
+            <button>
+              <i class="fa-brands fa-facebook-f"></i>
             </button>
           </div>
         </div>

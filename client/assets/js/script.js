@@ -171,18 +171,25 @@ fetch('http://localhost:8080/browse-by-category')
 .then(response => response.json())
 .then(data => {
   const artCardContainer = document.querySelector(".square-cards");
-  data.cards.forEach(cards =>{
+  // Renk sınıfları
+  const colorClasses = ['color1', 'color2', 'color3', 'color4', 'color5', 'color6', 'color7', 'color8'];
+  // Kartları ekleme döngüsü
+  data.cards.forEach((card, index) =>{
+    // Kartı eklerken sırayla bir renk sınıfı kullan
+    const colorClass = colorClasses[index % colorClasses.length];
     const artCardHMTL = `   
-    <div class="card-square ">
-    <i class="fa-solid fa-camera"></i>
-    <h3>${cards}</h3>
-  </div>`;
-  artCardContainer.innerHTML += artCardHMTL;
-} );
+    <div class="card-square ${colorClass}">
+      <i class="fa-solid fa-camera"></i>
+      <h3>${card}</h3>
+    </div>`;
+    artCardContainer.innerHTML += artCardHMTL;
+  });
 })
 .catch(error => {
   console.error('Veri çekme sırasında bir hata oluştu:', error);
 });
+
+
 
 //!NFT Card
 
@@ -192,10 +199,10 @@ fetch('http://localhost:8080/create-and-sell')
   const nftCardContainer = document.querySelector('.nft-card-container');
   data.cards.forEach(cards => {
     const nftCard = `  
-    <div class="nft-card">
+    <div class="nft-card progress-bar">
     <i class="fa-solid fa-wallet wallet-icon"></i>
     <div class="card-content">
-      <h6>${cards.title}</h6>
+      <h2>${cards.title}</h2>
       <div class="nft-card-text-content">
       ${cards.text}
       </div>
@@ -206,6 +213,6 @@ fetch('http://localhost:8080/create-and-sell')
   })
   .catch(error => {
     console.error('Veri çekme sırasında bir hata oluştu:', error);
-
   });
-})
+});
+
